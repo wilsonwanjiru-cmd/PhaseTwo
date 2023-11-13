@@ -1,0 +1,567 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+}
+h2, h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+@media (max-width: 768px) {
+h1 {
+    font-size: 1.5em;
+}
+h2, h3 {
+    font-size: 1.3em;
+}
+p {
+    font-size: 1em;
+}
+}
+/* styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
+        margin: 8px 0;
+    }
+}
+/* styles */
+h1, h2, p {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2, p {
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+}
+/* styles */
+h1, h2, p {
+    margin: 10px 0;
+}
+
+.code-snippet {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+    .code-snippet {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+/* styles */
+h1, h2, p {
+    margin: 10px 0;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    ul li {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+/* styles */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+p {
+    margin: 10px 0;
+}
+
+/* Styling for the code snippet with a black background */
+.code-snippet {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* styles */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+p {
+    margin: 10px 0;
+}
+/* styles */
+h1, p {
+    margin: 10px 0;
+}
+
+.code-snippet {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+    white-space: pre-wrap; /* Preserve line breaks in code */
+}
+/* styles */
+h1, p {
+    margin: 10px 0;
+}
+
+.code-snippet {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+    white-space: pre-wrap; /* Preserve line breaks in code */
+}
+/* styles */
+h1, p {
+    margin: 10px 0;
+}
+a {
+    color: #007BFF; /* Set link color to Bootstrap primary color */
+}
+/* styles */
+h1, p, ul, code {
+    margin: 10px 0;
+}
+.code-snippet {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+/* styles */
+h1, p, code {
+    margin: 10px 0;
+}
+.code-snippet {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    code {
+        font-size: 0.8em;
+    }
+    .code-snippet {
+        font-size: 0.8em;
+    }
+}
+/* styles */
+h2, p, code {
+    margin: 10px 0;
+    color: #333; /* Set text color for better readability */
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    h2, p, code {
+        font-size: 16px;
+    }
+}
+/* styles */
+h2, p, code {
+    margin: 10px 0;
+    color: #333; /* Set text color for better readability */
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    h2, p, code {
+        font-size: 16px;
+    }
+}
+/* styles */
+h2, p, code {
+    margin: 10px 0;
+    color: #333; /* Set text color for better readability */
+}
+/* Code Snippet Styling */
+.code-snippet {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+    margin: 10px 0;
+}
+/* styles */
+
+/* Add styles for the code snippet */
+.code-snippet {
+    
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) {
+    .code-snippet {
+        margin: 10px 0;
+    }
+}
+/* styles */
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
+/* styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+}
+
+/* Responsive styles for small screens */
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+
+    code {
+        padding: 8px;
+    }
+}
+/* styles */
+main {
+    max-width: 100%;
+    height: auto;
+}
+        /* Responsive styles for small screens */
+        @media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    /* styles */
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+/* styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+/* styles */
+h1 {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
+/* styles */
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+code {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    code {
+        font-size: 0.9em;
+    }
+}
+/* styles */
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    overflow: auto;
+}
+
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+/* styles */
+code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: limegreen;
+}
+/* styles */
+code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: limegreen;
+}
+/* styles */
+code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+h1, h2, h3 {
+    color: limegreen;
+}
+/* styles */
+code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+h1, h2, h3 {
+    color: limegreen;
+}
+/* styles */
+code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+h1, h2, h3 {
+    color: limegreen;
+}
+/* styles */
+h1, h2, h3 {
+    color: limegreen;
+}

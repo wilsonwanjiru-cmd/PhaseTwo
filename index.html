@@ -4,8 +4,1130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   <h1>My website</h1> 
+       <!-- Your content goes here -->
+       <h1>Learning Goals</h1>
+    
+       <h2>Understand how this phase is structured</h2>
+       <p>Learn the outcomes of this phase</p>
+       
+       <h2>Intro to Phase 2</h2>
+       <p>Welcome to Phase 2! In Phase 1, you learned the fundamentals of JavaScript as a language, and how to use JavaScript to manipulate the DOM, respond to user events, and make network requests. In this phase, you'll be introduced to the most popular frontend library of the last several years: React.</p>
+       <p>React itself is written in JavaScript as a tool for JavaScript developers, so all the fundamentals you learned — working with functions; manipulating arrays; and dealing with complex objects — are going to be crucial to your success with React.</p>
+       <p>What you'll get in return is a library that does a lot of the heavy lifting in terms of handling the DOM manipulation side of your applications.</p>
+       <p>React comes with strong opinions about how your code is written, in the form of a component-based architecture. Your success in this phase will come down to how well you adapt to React's philosophy and pattern of writing code, and how well you can apply your JavaScript knowledge.</p>
+       
+       <h2>Phase 2 Structure</h2>
+       <p>This phase is structured around first learning the React fundamentals, then adding complexity by learning a bit about the React ecosystem and other tools that you can use with React to make more advanced websites. Each module of content (a section of labs and readmes) ends with a quiz or "putting it all together" lab where you can check your understanding of the material. Here's what each module covers:</p>
+       
+       <h3>Introduction to React</h3>
+       <p>Get an overview of what React is all about and its philosophy, as well as the tools needed to get a React application up and running with functionality provided by different JavaScript packages.</p>
+       
+       <h3>Components and Props</h3>
+       <p>Components are the building blocks of every React application. Learn how to separate out your UI into small, reusable bits of code known as components. You'll also learn about JSX, which is React's declarative syntax for representing the DOM; and props, which is how data is shared between different parts of your application.</p>
+       <p>By the end of this module, you'll be able to build a static website with React components.</p>
+       
+       <h3>State and Events</h3>
+       <p>React's state system is where most of the "magic" happens in a React application. Learn how to use the useState hook, and how state can re-render DOM elements in response to events. By the end of this module, you'll be able to build a dynamic website that changes in response to user events.</p>
+       
+       <h3>Side Effects and Data Fetching</h3>
+       <p>A component's "main effect" is to produce some DOM elements; however, it can also be useful to handle some "side effects" as part of your component's rendering logic. In this module, you'll learn how to use the useEffect hook with components to perform side effects, and interact with an API to fetch data that your components can use. By the end of this module, you'll have covered all the core React fundamentals and will be able to make a single-page application in React.</p>
+       
+       <h3>[Optional] React Under the Hood</h3>
+       <p>In this optional module, you'll learn a bit more about the tools that help React do its job, like Babel and webpack. You'll also learn about the process of "Reconciliation" in React, and how React is able to manage changes to the DOM in a highly performant manner. This module is less hands-on, but it'll help your mental model of how React actually works (and will definitely help with React interview questions down the road).</p>
+       
+       <h3>Client-Side Routing</h3>
+       <p>For most applications, having different pages and some navigation is essential. Learn how to create multiple "pages" in a single-page application that each have their own unique URL, thanks to a popular tool in the React ecosystem, React Router.</p>
+       
+       <h3>[Optional] Advanced Hooks</h3>
+       <p>You can get a lot of mileage out of the two hooks we've taught up to this point: useState and useEffect. However, there are a few other hooks that cover different cases that will be discussed in this module. We'll also cover how to create your own custom hooks and abstract some of the logic for managing state and effects outside of your components.</p>
+       
+       <h3>[Optional] Class Components</h3>
+       <p>For many years, the only way to work with state and lifecycle methods in React was to use class components instead of function components. Even though the React team recommends writing function components nowadays, it's very likely that you'll come across legacy code, blog posts, and documentation that uses class components instead. In this module, we'll show how to refactor function components to class components to help learn the similarities and differences in syntax.</p>
+       
+       <h3>Additional Practice</h3>
+       <p>This module is full of optional practice challenges. In general, these practice challenges are meant to be used after you've completed the Side Effects and Data Fetching section to practice with building features of single-page applications that interact with an API.</p>
+       
+       <h2>Phase 2 Objectives</h2>
+       <p>By the end of this phase, you should be able to:</p>
+       <ul>
+           <li>Design a React component hierarchy based on a wireframe</li>
+           <li>Use React to create components that interact with an API</li>
+           <li>Incorporate client-side routing into a single-page application in React</li>
+       </ul>
+       
+       <p>We've got an exciting time ahead, so let's get started!</p>
+       <h1>What is React?</h1>
+   
+       <a href="https://github.com/your-repo-link">GitHub Repo</a>
+       <a href="https://github.com/your-repo-link/issues">Create New Issue</a>
+   
+       <h2>Learning Goals</h2>
+       <p>Understand React at a high level</p>
+       <p>Explain some of the benefits of using React when developing web applications</p>
+   
+       <h2>Introduction</h2>
+       <p>In the world of web development, there are a number of hip names tossed around — Angular, Vue, React. These are some of the front end frameworks that have gained popularity over the last few years. These frameworks provide a standardized way of creating and deploying parts of web applications. This allows developers to put their energy and focus towards designing a good experience for end users of the application.</p>
+       <p>The following lessons are all about just one framework, React. Why learn React? In the last few years, React has surpassed other frameworks in popularity and demand. For good reason, too! In this lesson, we will discuss what React is and why it is so awesome and useful.</p>
+   
+       <h3>A Quick Note on React</h3>
+       <p>Before we move on, it is important to note one thing: React is technically a library, not a framework. This is a big topic of debate, with one side standing by the technical definitions of frameworks and libraries, and the other arguing that React does essentially the same things as the other two main JS frameworks (and arguably better). Most people just stick to calling it a framework, but regardless of which term you use, one fact is not up for debate: React allows developers to build large, scalable applications, quickly and painlessly.</p>
+   
+       <h2>React Overview</h2>
+       <p>React is built entirely out of JavaScript, using a combination of dependencies. Using React might seem significantly different from what you're used to when writing vanilla JavaScript (or, in other words, just JavaScript). This is because React provides a specific way to organize and structure the design of a web application.</p>
+       <p>Using JSX, an extension of vanilla JavaScript with a specific syntax, we can write code that looks very similar to HTML. Snippets of this JSX get separated out into components, sort of like building blocks.</p>
+       <p>When combined, these components form a fully working web application. The use of components lets us separate code and functionality in a logical and easy to read way, producing highly reusable, independent, chunks.</p>
+   
+       <h3>Some of the Awesome Features of React</h3>
+       <p>From the <a href="https://react.dev/">React docs</a>, here are three of the key features of React:</p>
+       
+       <ol>
+           <li>Declarative</li>
+           <li>Component-Based</li>
+           <li>Learn Once, Write Anywhere</li>
+       </ol>
+   
+       <h4>Declarative</h4>
+       <p>You may have heard the expressions imperative and declarative programming before. Here are some quick definitions:</p>
+       
+       <p><strong>Imperative Programming:</strong></p>
+       <ul>
+           <li>Explicitly describes the actions a program should take, each step of the way</li>
+           <li>Describes how a program should go about doing those actions</li>
+       </ul>
+       
+       <p><strong>Declarative Programming:</strong></p>
+       <ul>
+           <li>Describes what a program should accomplish (or what the end result should be)</li>
+           <li>Leaves the determination of how to get to the end result up to the program</li>
+       </ul>
+       <h1>Creating DOM Elements without React</h1>
+       <p>Creating DOM elements without a framework like React tends to be a very imperative operation:</p>
+       <pre>
+           <code>
+   const header = document.createElement("h1");
+   header.textContent = "Hi!";
+   header.className = "main";
+   
+   const container = document.querySelector("#container");
+   container.append(header);
+           </code>
+       </pre>
+   
+       <h2>Using React for Declarative DOM Manipulation</h2>
+       <p>React, however, encourages a declarative approach to working with the DOM. In our code below (which is a special JSX format that React uses — more on that later!), we don't describe how to update the browser (i.e. "remove that &lt;div&gt;, add this &lt;li&gt;, etc."). Instead, we provide React with a template of what the component should look like once it is finished being prepared:</p>
+       <pre>
+           <code>
+   // JSX syntax
+   const header = &lt;h1 className="main"&gt;Hello from React!&lt;/h1&gt;
+   
+   ReactDOM.render(header, document.querySelector("#container"));
+           </code>
+       </pre>
+   
+       <p>In the example above, we are saying: "There should be a &lt;h1&gt; element with the text of 'Hello from React' rendered to the page".</p>
+       <p>This is us interacting in a declarative programming manner with React! We neither told it what to explicitly add/delete from the DOM when we wanted something changed, nor did we tell it how to go about changing the DOM. This is perfectly acceptable for React! As we explore more going forward, we will see how this code acts as a template and React does the rest.</p>
+   
+       <h2>Component-Based Development</h2>
+       <p>React encourages us to structure our applications as "components": building blocks of our web page that handle their own data and UI logic. Individual components can be "composed" together with other components to put together a complete app.</p>
+       <p>For instance, here's how we could design a site like Yelp by thinking in components:</p>
+       <div class="code-snippet">
+           <code>
+   function App() {
+     return (
+       &lt;div&gt;
+         &lt;NavBar /&gt;
+         &lt;ResultList&gt;
+           &lt;ResultItem result={result1} /&gt;
+           &lt;ResultItem result={result2} /&gt;
+         &lt;/ResultList&gt;
+         &lt;Map /&gt;
+       &lt;/div&gt;
+     );
+   }
+           </code>
+       </div>
+   
+       <h2>By separating out our code into these reusable, composable components, we can more easily put together complex UIs by thinking about each piece in isolation.</h2>
+   
+       <h2>Learn Once, Write Anywhere</h2>
+       <p>We won't be taking advantage of this feature of React as much during your time at Flatiron, but one great thing about React is that it works in a few different environments. Once you learn the key concepts of working with React to create client-side web applications, you can also more easily learn React Native and write native mobile apps using React, or use tools like Next.js and Gatsby to write server-rendered React.</p>
+       <h1>Writing React Projects</h1>
+       
+       <p>React has a recommended tool, <a href="https://create-react-app.dev/">create-react-app</a>, that makes it easy to create a new React project from scratch. The create-react-app tool sets up a preconfigured, default project, ready to launch with npm start. This package includes functionality built to be mobile-friendly and progressive. That means apps will work on all modern browsers and mobile devices. create-react-app also gives us a couple of additional tools to make React development better:</p>
+       
+       <ul>
+           <li><a href="https://babeljs.io/">Babel</a>: an included transpiler that converts modern JavaScript and custom code like JSX into more widely compatible JavaScript</li>
+           <li><a href="https://webpack.js.org/">webpack</a>: a 'bundler' that takes all our work, along with any required dependency code, and packages it all up in a single, transferable bundle</li>
+           <li>Built-in linting and code analysis functionality using <a href="https://eslint.org/">ESLint</a> to help improve our code, reinforce best practices, and catch common mistakes.</li>
+       </ul>
+       
+       <p>React is actively maintained by Facebook, and new features are added regularly! The <a href="https://react.dev/">React docs</a> are well-written and translated into many languages. Once you have a good grasp of React, you will have the ability to create cutting-edge web applications and sites. Knowing how to use React also opens doors to similar frameworks, such as React Native for building mobile apps.</p>
+       
+       <h2>Conclusion</h2>
+       
+       <p>You can imagine a framework is like a car — while it is interesting and useful to know how the engine works or how to fix a transmission, that knowledge isn't necessary for using the car to get where you want to go. What is necessary is that you understand how to use the pedals, turn the wheel, and change gears.</p>
+       
+       <p>First, we will be covering what you need to know to use React. Later, we'll go into more detail on the critical parts: the engine under the hood. By the end, you will be able to quickly design and create your own React apps!</p>
+       
+       <h2>Resources</h2>
+       
+       <ul>
+           <li><a href="https://react.dev/">React Docs</a></li>
+           <li><a href="https://reactwithhooks.netlify.app/">React Docs with Hooks</a></li>
+       </ul>
+       <h1>Intro to npm</h1>
+   
+       <a href="https://github.com/your-repo-link">GitHub Repo</a>
+       <a href="https://github.com/your-repo-link/issues">Create New Issue</a>
+   
+       <h2>Learning Goals</h2>
+       <p>Understand how to use npm to add functionality to JavaScript projects</p>
+       <p>Use npm's online platform</p>
+       <p>Configure your environment to use npm</p>
+   
+       <h2>Introduction</h2>
+       <p>When using React in our projects, we need to download the actual React code for our projects so that we can use it alongside our own JavaScript code. React itself is written in JavaScript, and it's an open source library. React itself also depends on some other open source JavaScript libraries. So how can we use all this excellent code ourselves?</p>
+   
+       <p>JavaScript has been around for many years now, and continues to serve as a critical part of the modern, interactive web. There are web developers all over the world writing JavaScript code, each contributing their own bits of work. That's a lot of code! In fact, there is a lot of duplicate code. Multiple web developers, over the years, have solved the same problems over and over.</p>
+   
+       <p>For these situations, we have JavaScript packages. A package is a file or set of files full of existing, reusable code. They are designed to be shared, allowing many web developers to use the same code in their own projects.</p>
+   
+       <p>To help organize these packages in relation to our own work, we use npm, which may or may not be short for Node Package Manager. In this lesson, we will be discussing how npm works and why it is useful.</p>
+   
+       <h2>The Value of Existing Code</h2>
+       <p>While it is important to learn the critical skills to solve problems with code, it is equally important that we learn how to identify existing code that suits our needs and incorporate it into our projects. We don't need to always be reinventing the wheel and writing code that may already exist.</p>
+   
+       <p>In fact, with the amount of developers out in the world, it is likely someone else has not only already invented the same wheel, but tested, upgraded, and innovated on it so that it is way better than anything we could write ourselves in a short period of time.</p>
+   
+       <p>Remember, programming is all about providing a solution to a problem. When 'on the job', so to speak, no one gets bonus points for concocting a novel/clever solution to a problem for which good open source code already exists.</p>
+   
+       <h2>Setting Up Node Package Manager</h2>
+       <p>Before we continue, let's make sure your environment is all set to work with npm.</p>
+   
+       <p>npm is automatically installed along with Node.js, which should already be installed on your system if you've worked through the JavaScript coursework. To confirm you have node installed, enter the following into your command line:</p>
+   
+       <div class="code-snippet">
+           <code>
+               node -v
+           </code>
+       </div>
+   
+       <p>If a version appears, you have Node.js. If, by chance, you do not have Node.js installed, you can use the Node Version Manager to install Node.js and keep it up to date.</p>
+   
+       <p>You can also double-check npm by running the following:</p>
+   
+       <div class="code-snippet">
+           <code>
+               npm -v
+           </code>
+       </div>
+   
+       <p>A version number should appear in your terminal. If you'd like, you can update npm by entering the following:</p>
+   
+       <div class="code-snippet">
+           <code>
+               npm install --global npm
+           </code>
+       </div>
+   
+       <p>or, for short:</p>
+   
+       <div class="code-snippet">
+           <code>
+               npm install -g npm
+           </code>
+       </div>
+   
+       <p>Okay, we've got it installed. But what is npm exactly?</p>
+       <h1>npm Introduction</h1>
+   
+       <p>As mentioned, npm is a package manager for JavaScript. This means that npm works with your JavaScript project directories via the command line, allowing you to install packages of preexisting code.</p>
+   
+       <p>What sort of code? All kinds! Some packages are quite small, like <a href="https://www.npmjs.com/package/is-number">is-number</a>, a package that has one function: to check if a value is a number. Some packages are much more complicated. Huge libraries and frameworks, including <a href="https://reactjs.org/">React</a> and <a href="https://expressjs.com/">Express</a>, are available as npm packages. These larger packages are often themselves built using a combination of other packages.</p>
+   
+       <p>This modular design — the ability to build a package using other packages — allows for developers to continuously expand the JavaScript universe, creating new, more powerful tools and applications on top of existing, tried and tested code.</p>
+   
+       <p><strong>npm install and package.json</strong></p>
+   
+       <p>All JavaScript labs at Flatiron rely on npm packages for their tests. Many use the <a href="https://mochajs.org/">mocha</a> npm package, which is a popular JavaScript testing framework.</p>
+   
+       <p>The lessons themselves don't actually include all the code from these different packages directly in the source code. Instead, they contain a list of dependencies in a file called <code>package.json</code>.</p>
+   
+       <p>The <code>package.json</code> file tells you (and npm) what packages are required for a specific JavaScript application, listing out each package name.</p>
+   
+       <p>When we run the command <code>npm install</code> in a directory where a <code>package.json</code> file is present, npm reads the names of each dependency from the <code>package.json</code> file and downloads the packages from <a href="https://www.npmjs.com/">npmjs.com</a>, where they are hosted. It then begins installing those packages — BUT! those packages also have their own <code>package.json</code> with their own dependencies! npm must also get those packages, and if those packages have any dependencies, get them as well. And so on. This is what we refer to as a dependency tree.</p>
+   
+       <p>If you are working in a local environment, running <code>npm install</code> creates a folder called <code>node_modules</code>, which contains all the downloaded packages. Note: the learn gem may automatically run <code>npm install</code> when you first run <code>learn test</code>.</p>
+   
+       <p>When building a project, you may realize you need some specific package. We can install packages by running <code>npm install &lt;package_name&gt;</code> while inside a project directory. Running this command will add the package as a dependency in the <code>package.json</code> file. This means that if you do not have a correctly structured <code>package.json</code> file, the install will not work! (Fortunately, npm has a built-in command, <code>npm init</code>, that we can use to create the <code>package.json</code> file. We'll learn more about it a bit later in this lesson.)</p>
+   
+       <p>The <code>package.json</code> file is a key part of sharing JS code repositories on sites like GitHub. Instead of having to include all the dependencies' code with every project, we just include a small file, listing out what npm needs to get for the project.</p>
+   
+       <p>The file also typically includes information about the project, such as the name, version, author, and license.</p>
+   
+       <p>The <code>package.json</code> file is written in JSON, so like an object in JavaScript, it is always wrapped in curly braces and includes keys and values. A basic example:</p>
+   
+       <div class="code-snippet">
+           <code>
+   {
+     "name": "react-hooks-intro-to-npm-readme",
+     "version": "1.0.0",
+     "description": "An introduction to npm and package.json",
+     "main": "index.js",
+     "scripts": {
+       "test": "echo 'hot dog'"
+     },
+     "dependencies": {
+       "is-number": "^7.0.0"
+     },
+     "repository": {
+       "type": "git",
+       "url": "git+https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme.git"
+     },
+     "author": "flatironschool",
+     "license": "ISC",
+     "bugs": {
+       "url": "https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme/issues"
+     },
+     "homepage": "https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme#readme"
+   }
+           </code>
+       </div>
+   
+       <p>In your terminal, if you are in a directory with the above <code>package.json</code> file present, running <code>npm test</code> will return "hot dog." This lesson actually does include this <code>package.json</code> file, so try it for yourself!</p>
+   
+       <p>This works because the command <code>npm test</code> is saying: "Hey npm, look in <code>package.json</code> and find the script with the name of 'test', then execute its value in the terminal."</p>
+       <h1>Having this file present also means it is possible to install additional packages.</h1>
+   
+       <p>There is one dependency already included:</p>
+   
+       <div class="code-snippet">
+           <code>
+   "dependencies": {
+     "is-number": "^7.0.0"
+   }
+           </code>
+       </div>
+   
+       <p>Running something like <code>npm install react</code> will add a second dependency:</p>
+   
+       <div class="code-snippet">
+           <code>
+   "dependencies": {
+     "react": "^17.0.2"
+   }
+           </code>
+       </div>
+   
+       <p>Try it now! Then take a look to see just how many dependencies (which React relies on) have been added to your <code>node_modules</code> directory.</p>
+   
+       <h2><code>npm init</code></h2>
+   
+       <p>Since npm relies on a <code>package.json</code> file, it has a built-in command to build <code>package.json</code> files. When you're creating a new project from scratch, running <code>npm init</code> on the command line will begin a series of prompts, asking about specific content to include in the file. At the end, it will create a file or edit an existing <code>package.json</code> file.</p>
+   
+       <h2>Conclusion</h2>
+   
+       <p>For all React lessons, we rely on npm to set up a lot of things 'under the hood'. The applications we build are made possible by the contributions of thousands of other coders before us!</p>
+   
+       <p>Remember! While endlessly fun, programming is a means to an end: we (or our employer) have a problem, and we give the computer instructions to crush the problem. If available, open, and secure code already exists do not hesitate to use it! Compared to physical goods, code snippets have less value attributed to novelty. (There is a reason you won't see "artisanal code" being sold on <a href="https://etsy.com" target="_blank" rel="noopener noreferrer">Etsy</a>.)</p>
+       <h1>Resources</h1>
+   
+       <p><a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm</a></p>
+   
+       <p>About npm: <a href="https://docs.npmjs.com/about-npm/" target="_blank" rel="noopener noreferrer">npm Documentation</a></p>
+       <h1>npm Code-Along</h1>
+   
+       <p><strong>Learning Goals:</strong></p>
+       <ul>
+           <li>Use a package.json file to manage project dependencies</li>
+           <li>Install a project dependency using npm</li>
+           <li>Import code from a package into a JavaScript file</li>
+       </ul>
+   
+       <h2>Introduction</h2>
+   
+       <p>When using npm, it is often the case that we aren't familiar with all of the code in the dependency tree. Building modern JavaScript applications relies on our ability to use the tools built for us by others. As it turns out, most of those tools are also built using other people's tools. One package may be used in another, which is used in another, and another, and so on...</p>
+   
+       <p>Using npm, we download specific packages of code. If those packages have dependencies, the dependencies are also downloaded in a recursive manner. For the purposes of our own application, however, we only need to know about the node packages we specifically need to get our app working. We don't need to worry about what packages those packages need. Why? Because every node package includes a package.json file that lists out all dependencies. This file lets Node know what to download when we run npm install. Node will download all the packages, check the package.json files present in each of those packages, download any additional packages, and repeat.</p>
+   
+       <p>We will see in future labs that as the number of packages increases, more and more happens when we run npm install. All we need to worry about, though, is the top level — what is listed in our application's package.json file.</p>
+   
+       <h2>In this code-along, we are going to practice the process of setting up a package.json file. We will also install an npm package or two and use their functionality in new code we write.</h2>
+   
+       <h2>Getting Started</h2>
+   
+       <p>Before we can create a package.json file, we'll need a project and a project folder to contain all the files. For this code-along, we'll be building out a clock application that changes color every second.</p>
+   
+       <p>In this lesson, a sub-folder has been created for us to use, color-clock, that contains some basic starter files for a project. If you look at color-clock/index.html, you'll see a script tag:</p>
+   
+       <div class="code-snippet">
+           <code>
+               &lt;script src="index.js" type="module"&gt;&lt;/script&gt;
+           </code>
+       </div>
+   
+       <p>Taking a look inside index.js, we can see that this script relies on a unique function call, <code>format(new Date(), "MMMM do yyyy, h:mm:ss a")</code>. We're also importing that function from a node_modules folder that contains a date formatting library called date-fns. Our goal is to get this code working. We do not need to change index.js. Instead, we will need to set up a package.json file and install the date-fns package.</p>
+       <h1>Navigate to the Project Directory</h1>
+   
+       <p>The first thing to do is change directory into this folder in your terminal by typing the command <code>cd color-clock</code>.</p>
+   
+       <p><strong>Note:</strong> The next step will create a package.json file in whatever directory you are in, which in turn will be where the node_modules folder is. If you do not change directory into color-clock, you'll end up creating a file in the main directory of this lesson, and color-clock/index.js will be looking for node_modules in the wrong directory.</p>
+   
+       <h2>Create a package.json File</h2>
+   
+       <p>The package.json can be written quickly from scratch, but we actually have a handy command for creating these files: <code>npm init</code>.</p>
+   
+       <p>Run <code>npm init</code> and you will be prompted to confirm the information that will be stored in package.json, starting with the name of the project.</p>
+   
+       <p>Most prompts will provide a default value. Some are blank and can be left this way for now. Follow the prompts by pressing enter in the terminal on each prompt until you reach the end, when you will be prompted to type 'yes' to confirm. A fully constructed package.json file will then appear in the color-clock directory.</p>
+   
+       <h2>Add a Script</h2>
+   
+       <p>In the process of creating the package.json file, you were prompted to write a test script. Let's add a working script in to see how this works.</p>
+   
+       <p>Open the newly created package.json file and look for a section titled "scripts". Let's replace the default "test" script with a shell command:</p>
+   
+       <div class="code-snippet">
+           <code>
+               "scripts": {
+                 "test": "echo 'Hello World!'"
+               }
+           </code>
+       </div>
+   
+       <p>We can now call this script and have it run by using the command <code>npm test</code> in the terminal (if that doesn't work, try <code>npm run test</code>). You should see a print out of Hello World!.</p>
+   
+       <p>In all the JavaScript-based labs you've encountered so far, this sort of script is how we run tests. If you look at the "test" script on previous labs, most will have something like this:</p>
+   
+       <div class="code-snippet">
+           <code>
+               "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+           </code>
+       </div>
+   
+       <p>This is actually a command that you can run in the terminal. This is a call to the testing package, mocha, along with a second package, mocha-multi that helps with reporting. When you run learn or learn test in a lab, npm test gets called.</p>
+   
+       <p>Scripts are often useful for things like testing or to start a necessary process, like a local server.</p>
+   
+       <h2>Install a Package</h2>
+   
+       <p>With package.json set up, we can now add a package we want to include in our project.</p>
+   
+       <p>Now, we're building a colorful clock — the project is simple enough that we could build it entirely out of custom code. Here's the thing though: one of the reasons packages exist and are so useful is because programmers often run into the same problems over and over. Node packages are written so we don't have to re-find a solution other programmers have found.</p>
+   
+       <p>In the case of a colorful clock, we have to deal with formatting time. This is such a common problem, that a package has been created to help us: date-fns. date-fns is a handy package that comes with a number of functions that make displaying dates and times simpler than trying to figure out JavaScript's built-in functions.</p>
+   
+       <p>Let's install date-fns and incorporate it into our clock. To install a package and save it to your package.json file, run <code>npm install</code> followed by the package name. In our case, that would be:</p>
+   
+       <div class="code-snippet">
+           <code>
+               npm install date-fns
+           </code>
+       </div>
+   
+       <p>This command will add the package to the list of dependencies in package.json. When <code>npm install</code> is run, all dependencies are installed. If you were to publish this repository on GitHub, other users would now be able to clone down the repo and install whatever is listed in package.json to get the program working.</p>
+   
+       <p>We'll also need one more package to run our application in the browser. Run this command:</p>
+   
+       <div class="code-snippet">
+           <code>
+               npm install serve
+           </code>
+       </div>
+   
+       <p>This <a href="https://www.npmjs.com/package/serve" target="_blank">serve</a> package will run a lightweight server. We can set up another npm script to run the server using the serve package:</p>
+   
+       <div class="code-snippet">
+           <code>
+               "scripts": {
+                 "test": "echo 'Hello World!'",
+                 "start": "serve"
+               }
+           </code>
+       </div>
+   
+       <p>Run <code>npm start</code> to run this script, and open up <a href="http://localhost:5000" target="_blank">localhost:5000</a> in the browser.</p>
+   
+       <p>If package.json file has the correct package, and the node module has been installed, you should see a colorful clock appear!</p>
+       <h2>Conclusion</h2>
+   
+       <p>When building our own applications, we will often rely on existing packages to handle specific pieces of a project. Although we only installed a couple of packages for this code-along, there were additional layers of dependencies for them so many additional dependencies were installed as well. It isn't necessary to understand how each of these works. The main thing to grasp is how to implement and use the specific dependencies you need.</p>
+       <h2>Conclusion</h2>
+   
+       <p>When building our own applications, we will often rely on existing packages to handle specific pieces of a project. Although we only installed a couple of packages for this code-along, there were additional layers of dependencies for them so many additional dependencies were installed as well. It isn't necessary to understand how each of these works. The main thing to grasp is how to implement and use the specific dependencies you need.</p>
+       <h2>Running Tests in React</h2>
+   
+       <p><strong>Learning Goals:</strong></p>
+       <ul>
+           <li>Use Jest to run tests on specific files</li>
+       </ul>
+   
+       <h2>Introduction</h2>
+   
+       <p>In this lab, we'll discuss how the tests are set up for the labs in this phase, and give some tips for running tests.</p>
+   
+       <h2>Running Jest Tests</h2>
+   
+       <p>There are a number of JavaScript test frameworks out there. For testing vanilla JavaScript applications, one popular choice is Mocha, which we use for the tests in our JavaScript labs.</p>
+   
+       <p><a href="https://jestjs.io/" target="_blank">Jest</a> is another popular choice for JavaScript developers, and in particular the React community. Jest, like React, was developed by Facebook and is an open source project. You can read the <a href="https://jestjs.io/docs/getting-started" target="_blank">jest docs</a> if you're curious to learn more.</p>
+   
+       <p>Jest comes preinstalled when you generate a React project using create-react-app, so all you have to do to run tests in React labs is run <code>npm test</code>, which will execute the test script found in the package.json file. You can also run <code>learn test</code>, which will run the test files as well as sync your progress with Canvas.</p>
+   
+       <p>Running <code>learn test</code> or <code>npm test</code> should produce output like this in your terminal: <a href="https://jestjs.io/img/blog/15-watch.gif" target="_blank">Jest Output</a></p>
+       <p>This command will run all tests in the src directory by looking for files that have .test.js in the file name (you'll typically find them in the _tests_ directory for our labs).</p>
+   
+       <p>After running learn test, any changes you make to your components will cause the tests to run again, so you can keep the tests running as you work!</p>
+   
+       <h2>Code Along</h2>
+   
+       <p>There are a couple of tests defined for this lab so you can get some practice.</p>
+   
+       <p>To get started, run npm install (if you haven't already), then run npm test or learn test.</p>
+   
+       <p>You should see something like this in the output:</p>
+   
+       <div class="code-snippet">
+           <code>
+               ... (output details)
+           </code>
+       </div>
+   
+       <p>Let's focus on the Header.test.js file first. To tell Jest to only run tests on this one file, press the p key in your terminal (this will let you filter out tests by their filename). In the next screen, type in Header:</p>
+   
+       <div class="code-snippet">
+           <code>
+               ... (pattern mode details)
+           </code>
+       </div>
+   
+       <p>Then, press the Enter key to run tests in the Header.test.js file only.</p>
+   
+       <p>See if you can get this test passing by updating the code in /src/components/Header.js!</p>
+   
+       <p>Next, press the a key in your terminal to tell Jest to run all tests. Try getting the tests for the Article component to pass too.</p>
+   
+       <p>When you've finished, you can hit the q key to exit Jest.</p>
+   
+       <h2>Resources</h2>
+   
+       <p><a href="https://jestjs.io/" target="_blank">Jest</a></p>
+       <h2>A React App Example</h2>
+   
+       <p><strong>Learning Goals:</strong></p>
+       <ul>
+           <li>Understand the folder structure and key files for running a React application</li>
+           <li>Explore the structure of a basic React component</li>
+           <li>Debug React components using the React Developer Tools</li>
+       </ul>
+   
+       <h2>Introduction</h2>
+   
+       <p>Before we dive in and start working on specific parts of a React project, let's take a look at a simple React application so we can understand it at a high level.</p>
+   
+       <p>In this lesson, we will start with a basic React app, examine the default directory structure, and gain a better understanding of how these apps are built.</p>
+   
+       <h2>Starting Up a React App</h2>
+   
+       <p>This lesson has all the necessary parts of a fully working React app. To check the app out, fork and clone this lesson onto your computer, navigate into the lesson's directory, and run:</p>
+   
+       <div class="code-snippet">
+           <code>
+               npm install
+           </code>
+       </div>
+   
+       <p>This will get and install all the required dependencies for React.</p>
+   
+       <p>Next, we need to start up a server for the app to run on:</p>
+   
+       <div class="code-snippet">
+           <code>
+               npm start
+           </code>
+       </div>
+   
+       <p>This will host the app and open a browser window to display it. If the server started correctly but the browser doesn't open, you can use the links that appear in the terminal to access the app. They should look something like this:</p>
+   
+       <div class="code-snippet">
+           <code>
+               Local:            http://localhost:3000<br>
+               On Your Network:  http://192.168.1.5:3000
+           </code>
+       </div>
+   
+       <p>You can use the Local link to open the app in your own browser. The second is for any other computers on your network that you want to access your app from (this is particularly useful if you want to test out your app in a mobile browser on your phone).</p>
+   
+       <p>If everything has worked correctly, you should see a page with the exact time it was loaded, along with a small amount of text and a GIF.</p>
+   
+       <p>If we make any changes to our app while the server is running, it will 'hot reload,' and update the app in the browser. If there are app-breaking errors in your code, the browser will display those errors instead.</p>
+   
+       <p>We'll start by exploring the JavaScript code for this sample app in the src directory.</p>
+           
+           </div>
+           <header>
+               <h1>React Fundamentals - Components & Props</h1>
+           </header>
+       
+           <main>
+               <p>Welcome to the React Fundamentals course on Components & Props.</p>
+               <p>Explore the course on Scrimba: <a href="https://scrimba.com/playlist/pzvM7hM" target="_blank">React Fundamentals - Components & Props</a></p>
+               <!-- Include content from Scrimba here if possible -->
+           </main>
+       
+           <footer>
+               <p>© 2023 Your Website</p>
+           </footer>
+           <header>
+               <h1>React Components Basics</h1>
+           </header>
+       
+           <section>
+               <h2>Due No Due Date</h2>
+               <p>Points: 1</p>
+               <p>Submitting a website URL</p>
+               <p><a href="https://github.com/">Fork This Assignment GitHub Repo</a></p>
+               <p><a href="https://github.com/">Create New Issue</a></p>
+           </section>
+       
+           <section>
+               <h2>Learning Goals</h2>
+               <ul>
+                   <li>Understand what a React component is and what it can be used for</li>
+                   <li>Write React components and show the DOM elements they create</li>
+               </ul>
+           </section>
+       
+           <section>
+               <h2>Introduction</h2>
+               <p>In this lesson, we'll introduce the heart of React: components. This will include explaining why they're important and examining a few examples. If the idea and application of components don't click immediately, do not worry! The different moving parts required to understand how to use them will fall into place as we move forward.</p>
+               <p>Let's examine a high-level overview of what a React component is before we implement one. The official React documentation on components <a href="https://legacy.reactjs.org/docs/components-and-props.html" target="_blank">Links to an external site.</a> says it best:</p>
+               <blockquote>
+                   <p>Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.</p>
+               </blockquote>
+               <p>Components modularize both functionality and presentation in our code. In order to understand how powerful this is, consider just how intricate web applications can become. The difficulty in logically arranging, architecting, and programming these web applications increases with their size. Components are like little packages: they help us keep everything organized and predictable while abstracting the 'boilerplate' <a href="https://en.wikipedia.org/wiki/Boilerplate_code" target="_blank">Links to an external site.</a> code. Each component contains a snippet of code that describes what it should render to the DOM.</p>
+           </section>
+           <header>
+               <h1>React Application Idea</h1>
+           </header>
+       
+           <section>
+               <h2>Enough of a description — let's see some examples!</h2>
+               <p>While the possibilities of what we can do with components are endless, the first thing we need to understand about them is the ways in which they act as code templates. Let's start simply and build up from there using the following as an example:</p>
+       
+               <h3>Let's imagine we want a blog article describing the fact (note: not opinion) of why Bjarne Stroustrup has the
+                   perfect lecture oration<a href="https://www.youtube.com/watch?v=JBjjnqG0BP8" target="_blank">Links to an external site.</a>.</h3>
+               <p>We also want our blog article to display comments made by readers.</p>
+       
+               <p>Fork and clone the repo for this lesson if you'd like to follow along.</p>
+           </section>
+       
+           <section>
+               <h2>Step 1: Write the Components</h2>
+               <p>First, let's make a component to showcase an opinion:</p>
+       
+               <code>
+                   function Article() {<br>
+                   &nbsp;&nbsp;return (<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Dear Reader: Bjarne Stroustrup has the perfect lecture oration.&lt;/div&gt;<br>
+                   &nbsp;&nbsp;);<br>
+                   }
+               </code>
+       
+               <p>Take a moment to read that code line by line:</p>
+               <ul>
+                   <li>we declare a function, Article</li>
+                   <li>we explicitly provide a return value of JSX (we tell React "Hey, when you want to put this component on
+                       the DOM, here is what it should become!")</li>
+               </ul>
+       
+               <p>When React creates this element and adds it to the DOM, the resulting HTML will look just as you would expect:</p>
+               <code>
+                   &lt;div&gt;Dear Reader: Bjarne Stroustrup has the perfect lecture oration.&lt;/div&gt;
+               </code>
+       
+               <p>Let's see what it would look like, were we to only render this one component, in the DOM:</p>
+               
+           </section>
+           <header>
+                   <h1>Image Example</h1>
+               </header>
+           
+               <main>
+                   <img src="https://curriculum-content.s3.amazonaws.com/react/component-article-example.png" alt="Example Image">
+               </main>
+   
+       <header>
+           <h1>React Components Example</h1>
+       </header>
+   
+       <main>
+           <section>
+               <h2>Ok, that takes care of our Article part of our application.</h2>
+               <p>Now let's make a component to display a single user's comment:</p>
+   
+               <code>
+                   function Comment() {<br>
+                   &nbsp;&nbsp;return &lt;div&gt;Naturally, I agree with this article.&lt;/div&gt;;<br>
+                   }
+               </code>
+   
+               <p>Take the time to read that component line by line. Here is the HTML that this would create when added to the DOM:</p>
+               <code>
+                   &lt;div&gt;Naturally, I agree with this article.&lt;/div&gt;
+               </code>
+   
+               <p>In both of our examples, React is taking JavaScript code, interpreting that special JSX syntax within the return() statement, and spitting out plain old HTML that browsers will know how to represent to the user.</p>
+           </section>
+   
+           <section>
+               <h2>Step 2: Use the Components</h2>
+               <p>Now that we have these components written, all we need to do is make sure some other component is making use of them in its return statement. Every React application has some top-level component(s). Very often, this top-level component is simply called App. For our example, here's what it might look like:</p>
+   
+               <code>
+                   function App() {<br>
+                   &nbsp;&nbsp;return (<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Article /&gt;<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Comment /&gt;<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                   &nbsp;&nbsp;);<br>
+                   }
+               </code>
+   
+               <p>Here we can see JSX coming into play a bit more. The code inside the return() still looks a lot like regular HTML, but in addition to rendering a regular old HTML &lt;div&gt; element, we're also rendering our two components. We've created code that is not only well-structured and modular but also a straightforward description of what we want the App component to do: render the article first, followed by the comment. Here is what the resulting HTML will look like:</p>
+               <code>
+                   &lt;div&gt;<br>
+                   &nbsp;&nbsp;&lt;div&gt;Dear Reader: Bjarne Stroustrup has the perfect lecture oration.&lt;/div&gt;<br>
+                   &nbsp;&nbsp;&lt;div&gt;Naturally, I agree with this article.&lt;/div&gt;<br>
+                   &lt;/div&gt;
+               </code>
+           </section>
+       </main>
+       <main>
+           <img src="https://curriculum-content.s3.amazonaws.com/react/component-article-comment-example.png" alt="Example Image">
+       </main>
+       <header>
+           <h1>Naming Components Example</h1>
+       </header>
+   
+       <main>
+           <section>
+               <h2>This unpacks logically.</h2>
+               <p>The App component (being our top-level component) wraps around both Article and Comment, and we already know what they look like when they are turned into HTML.</p>
+   
+               <p>As you may expect, we refer to the App component as both the Comment and Article component's parent component. Inversely, we refer to Comment and Article as children components of App.</p>
+           </section>
+   
+           <section>
+               <h2>Naming Components</h2>
+               <p>You'll notice that both of the custom components we created, Article and Comment, are declared as functions whose names start with a capital letter:</p>
+   
+               <code>
+                   function Article() {<br>
+                   &nbsp;&nbsp;return (<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Dear Reader: Bjarne Stroustrup has the perfect lecture oration.&lt;/div&gt;<br>
+                   &nbsp;&nbsp;);<br>
+                   }<br><br>
+                   function Comment() {<br>
+                   &nbsp;&nbsp;return &lt;div&gt;Naturally, I agree with this article.&lt;/div&gt;;<br>
+                   }
+               </code>
+   
+               <p>This naming convention is important for a couple very good reasons:</p>
+               <ul>
+                   <li>It helps React developers to easily differentiate between regular JavaScript functions and React components</li>
+                   <li>More importantly, it's a rule that we must follow in order for React to render our components correctly.</li>
+               </ul>
+   
+               <p>For instance, if we defined our Article component using a lowercase letter, like this:</p>
+   
+               <code>
+                   function article() {<br>
+                   &nbsp;&nbsp;return &lt;div&gt;Dear Reader: Bjarne Stroustrup has the perfect lecture oration.&lt;/div&gt;;<br>
+                   }
+               </code>
+   
+               <p>When it came time to use that component within another component, React would treat it as a regular &lt;article&gt; HTML element rather than one of our custom components:</p>
+   
+               <code>
+                   function App() {<br>
+                   &nbsp;&nbsp;return (<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article /&gt;<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                   &nbsp;&nbsp;);<br>
+                   }<br><br>
+                   // returns these DOM elements:<br>
+                   // &lt;div&gt;<br>
+                   //  &lt;article /&gt;<br>
+                   // &lt;/div&gt;
+               </code>
+   
+               <p>By giving it a name with a capital letter instead, we get the desired DOM elements returned:</p>
+   
+               <code>
+                   function App() {<br>
+                   &nbsp;&nbsp;return (<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Article /&gt;<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                   &nbsp;&nbsp;);<br>
+                   }<br><br>
+                   // returns these DOM elements:<br>
+                   // &lt;div&gt;<br>
+                   //  &lt;div&gt;Dear Reader: Bjarne Stroustrup has the perfect lecture oration.&lt;/div&gt;<br>
+                   // &lt;/div&gt;
+               </code>
+           </section>
+       </main>
+       <header>
+           <h1>React Components Example</h1>
+       </header>
+   
+       <main>
+           <section>
+               <h2>A Note on Classes</h2>
+               <p>As you're exploring the React documentation, and finding other resources on React on the internet, you'll probably notice there are multiple syntaxes you can use for creating components: function components and class components.</p>
+   
+               <p>A function component looks like this:</p>
+   
+               <code>
+                   function Comment() {<br>
+                   &nbsp;&nbsp;return &lt;div&gt;Naturally, I agree with this article.&lt;/div&gt;;<br>
+                   }<br><br>
+                   {/* Or using the arrow function syntax: */}
+                   const Comment = () =&gt; &lt;div&gt;Naturally, I agree with this article.&lt;/div&gt;;
+               </code>
+   
+               <p>A class component looks like this:</p>
+   
+               <code>
+                   class Comment extends React.Component {<br>
+                   &nbsp;&nbsp;render() {<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;return &lt;div&gt;Naturally, I agree with this article.&lt;/div&gt;;<br>
+                   &nbsp;&nbsp;}<br>
+                   }
+               </code>
+   
+               <p>For many years, the only way to work with certain key features of React — state and lifecycle — was to use class components. Since the introduction of hooks in React 16.8, this is no longer true, and function components can be used for (almost) everything that class components can.</p>
+   
+               <p>React's recommendation is that components should be written as function components moving forward, but class components will continue to be supported as well. React is also planning to rewrite their documentation to focus on function components and hooks in the near future.</p>
+   
+               <p>In the meantime, you can also view a community-made version of the React docs that shows all examples with function components.</p>
+   
+               <p>You'll learn more about class components later on, so that when you encounter them in legacy code, you'll still be able to work with them. However, for the time being, we'll just be focusing on function components.</p>
+           </section>
+       </main>
+       <h1>Conclusion</h1>
+   
+   <p>We just introduced simplified, bare bones, React components. They are used to house modularized front end code. In our example — as is often the case — they contain information on how a portion of our application should be turned into HTML.</p>
+   
+   <p>The minimum requirement for a React component is that it must be a function that starts with a capital letter and returns JSX.</p>
+   
+   <p>Going forward, we will continue with this example and show how components can be re-used and how they can be written as templates in which content is populated dynamically.</p>
+   
+   <h2>Resources</h2>
+   <ul>
+       <li><a href="https://reactjs.org/docs/react-api.html" target="_blank">React Top-Level API</a></li>
+       <li><a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank">Introducing JSX</a></li>
+       <li><a href="https://reactwithhooks.netlify.app/docs/getting-started.html" target="_blank">React Docs with Hooks</a></li>
+   </ul>
+   <h1>Organizing Code with Import/Export</h1>
+   
+   <section>
+       <h2>Learning Goals</h2>
+       <ul>
+           <li>Understand why it's important to split up our code into smaller files</li>
+           <li>Learn how import and export support our ability to build modular code</li>
+           <li>Understand the different ways to import and export code</li>
+       </ul>
+   </section>
+   
+   <section>
+       <h2>Introduction</h2>
+       <p>In this lesson, we'll discuss the import and export keywords and how they allow us to share JavaScript code across multiple files.</p>
+   </section>
+   
+   <section>
+       <h2>Modular Code</h2>
+       <p>Modular code is code that is separated into segments (modules), where each file is responsible for a feature or specific functionality.</p>
+   
+       <p>Developers separate their code into modules for many reasons:</p>
+       <ul>
+           <li>Stricter variable scope</li>
+           <li>Adherence to the single-responsibility principle</li>
+           <li>Easier to navigate</li>
+           <li>Easier to debug</li>
+           <li>Produce clean and DRY code</li>
+       </ul>
+   </section>
+   
+   <section>
+       <h2>Modularizing React Code</h2>
+       <p>React makes the modularization of code easy by introducing the component structure.</p>
+   
+       <code>
+           function Hogwarts() {<br>
+           &nbsp;&nbsp;return (<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="Hogwarts"&gt;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Harry. Did you put your name in the Goblet of Fire?"<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+           &nbsp;&nbsp;);<br>
+           }
+       </code>
+   </section>
+   <p>It's standard practice to give each of these components their own file. It is not uncommon to see a React program file tree that looks something like this:</p>
+   
+   <pre>
+       <code>
+           ├── README.md
+           ├── public
+           └── src
+                ├── App.js
+                ├── Hogwarts.js
+                └── Houses.js
+       </code>
+   </pre>
+   
+   <p>With our components separated in their own files, all we have to do is figure out how to access the code defined in one file within a different file. Well, this is easily done in modern JavaScript using import and export!</p>
+   
+   <h2>Import and Export</h2>
+   
+   <p>On a simplified level, import and export enable us to use code from one file in other locations across our projects, which becomes increasingly important as we build out larger applications. Let's look at how we can do this. Fork and clone the repo for this lesson if you'd like to follow along with the examples.</p>
+   
+   <h3>Export</h3>
+   
+   <p>Since variables in modules are not visible to other modules by default, we must explicitly state which variables should be made available to the rest of our application. Exporting a component — or module of code — allows us to call upon that export-ed variable in other files, and use the embedded code within other modules. There are two ways to export code in JavaScript: we can use the export default syntax or we can explicitly name our exports.</p>
+   <h1>Export Default Example</h1>
+   
+   <section>
+       <h2>Export Default</h2>
+       <p>We can only use export default once per module. This syntax lets us export one variable from a module which we can then import in another file.</p>
+   
+       <code>
+           // src/houses/whoseHouse.js<br>
+           function whoseHouse() {<br>
+           &nbsp;&nbsp;console.log("HAGRID'S HOUSE!");<br>
+           }<br><br>
+           export default whoseHouse;
+       </code>
+   </section>
+   
+   <section>
+       <h2>Usage in Another File</h2>
+       <p>This enables us to use import to make use of that function elsewhere:</p>
+   
+       <code>
+           // src/Hogwarts.js<br>
+           import React from "react";<br>
+           import whoseHouse from "./houses/whoseHouse";<br><br>
+           function Hogwarts() {<br>
+           &nbsp;&nbsp;whoseHouse(); // => "HAGRID'S HOUSE!"<br><br>
+           &nbsp;&nbsp;return &lt;h1&gt;Welcome to Hogwarts!&lt;/h1&gt;;<br>
+           }<br>
+           export default Hogwarts;
+       </code>
+   
+       <p><code>export default</code> allows us to name the exported code whatever we want when importing it:</p>
+   
+       <code>
+           // src/Hogwarts.js<br>
+           import React from "react";<br>
+           import aDifferentName from "./houses/whoseHouse";<br><br>
+           function Hogwarts() {<br>
+           &nbsp;&nbsp;aDifferentName(); // => "HAGRID'S HOUSE!"<br><br>
+           &nbsp;&nbsp;return &lt;h1&gt;Welcome to Hogwarts!&lt;/h1&gt;;<br>
+           }<br>
+           export default Hogwarts;
+       </code>
+   </section>
+   <h1>Exporting React Components</h1>
+   
+   <section>
+       <h2>Renaming Exports</h2>
+       <p>It's generally not advised to rename exports, since it can make it more difficult to debug. Use this technique sparingly (for example, when you are using a library that exports a default variable with the same name as one of your own variables).</p>
+   </section>
+   
+   <section>
+       <h2>Exporting React Components</h2>
+       <p>Since React components are also just functions, we can export them too! You'll typically have just one React component per file, so it makes sense to use the export default syntax with React components, like so:</p>
+   
+       <code>
+           // src/houses/Hufflepuff.js<br>
+           import React from "react";<br><br>
+           function Hufflepuff() {<br>
+           &nbsp;&nbsp;return &lt;div&gt;NOBODY CARES ABOUT US&lt;/div&gt;;<br>
+           }<br><br>
+           export default Hufflepuff;
+       </code>
+   
+       <p>Then, we can import the entire component to any other file in our application, using whatever naming convention that we see fit:</p>
+   
+       <code>
+           // src/Hogwarts.js<br>
+           import React from "react";<br>
+           import Hufflepuff from "./houses/Hufflepuff";<br><br>
+           function Hogwarts() {<br>
+           &nbsp;&nbsp;return (<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Hufflepuff /&gt;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+           &nbsp;&nbsp;);<br>
+           }<br><br>
+           export default Hogwarts;
+       </code>
+   
+       <p>You may come across a slightly different way of writing this, with export default written directly in front of the name of the function:</p>
+   
+       <code>
+           export default function Hogwarts() {<br>
+           &nbsp;&nbsp;// ...<br>
+           }
+       </code>
+   
+       <p>Our preferred approach is to write the export statements at the bottom of the file for consistency and to make it easier for other developers to identify what is being exported, but the syntax above will also work.</p>
+   </section>
+   <h1>Named Exports Example</h1>
+   
+   <section>
+       <h2>Named Exports</h2>
+       <p>With named exports, we can export multiple variables from within a module, allowing us to call on them explicitly when we import.</p>
+   
+       <p>Named exports allow us to export several specific things at once:</p>
+   
+       <code>
+           // src/houses/Gryffindor.js<br>
+           const colors = "Scarlet and Gold";<br><br>
+           function values() {<br>
+           &nbsp;&nbsp;console.log("Courage, Bravery, Nerve and Chivalry");<br>
+           }<br><br>
+           function gryffMascot() {<br>
+           &nbsp;&nbsp;console.log("The Lion");<br>
+           }<br><br>
+           export { colors, gryffMascot };
+       </code>
+   
+       <p>We can then import and use them in another file:</p>
+   
+       <code>
+           // src/Hogwarts.js<br>
+           import { colors, gryffMascot } from "./houses/Gryffindor";<br><br>
+           console.log(colors);<br>
+           // => 'Scarlet and Gold'<br><br>
+           gryffMascot();<br>
+           // => 'The Lion'
+       </code>
+   
+       <p>We can also write named exports next to the function definition:</p>
+   
+       <code>
+           // src/houses/Gryffindor.js<br>
+           export const colors = "Scarlet and Gold";<br><br>
+           function values() {<br>
+           &nbsp;&nbsp;console.log("Courage, Bravery, Nerve and Chivalry");<br>
+           }<br><br>
+           export function gryffMascot() {<br>
+           &nbsp;&nbsp;console.log("The Lion");<br>
+           }
+       </code>
+   </section>
+   
+   <section>
+       <h2>Import</h2>
+       <p>The import keyword is what enables us to take modules that we've exported and use them in other files throughout our applications. There are many ways to import with React, and the method that we use depends on what type of code we are trying to access and how we exported it.</p>
+   
+       <p>In order to import a module into another file, we write out the relative path to the file that we are trying to access. Let's look at some examples.</p>
+   </section>
+   <h1>Import * from Example</h1>
+   
+   <section>
+       <h2>import * from</h2>
+       <p><code>import * from</code> imports all of the functions that have been exported from a given module. This syntax looks like:</p>
+   
+       <code>
+           // src/Hogwarts.js<br>
+           import * as GryffFunctions from "./houses/Gryffindor";<br><br>
+           console.log(GryffFunctions.colors);<br>
+           // > 'Scarlet and Gold'<br><br>
+           GryffFunctions.gryffMascot();<br>
+           // => 'The Lion'<br><br>
+           GryffFunctions.values();<br>
+           // => Attempted import error
+       </code>
+   
+       <p>In the example above, we're importing all the exported variables from file Gryffindor.js as properties on an object called GryffFunctions. Since values is not exported, trying to use that function will result in an error.</p>
+   
+       <p>We are using the relative path to navigate from src/Hogwarts.js to src/houses/Gryffindor.js. Since our file structure looks like this:</p>
+   
+       <code>
+           ├── src<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;├── houses<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Gryffindor.js<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Hufflepuff.js<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── whoseHouse.js<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;├── Hogwarts.js<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;└── index.js
+       </code>
+   
+       <p>To get from Hogwarts.js to Gryffindor.js, we can stay in the src directory, then navigate to houses, where we'll find Gryffindor.js.</p>
+   </section>
+   <h1>Import { variable } from Example</h1>
+   
+   <section>
+       <h2>import { variable } from</h2>
+       <p><code>import { variable } from</code> allows us to grab a specific variable/function by name and use it within the body of a new module.</p>
+   
+       <code>
+           // src/Hogwarts.js<br>
+           import { colors, gryffMascot } from "./houses/Gryffindor";<br><br>
+           console.log(colors);<br>
+           // > 'Scarlet and Gold'<br><br>
+           gryffMascot();<br>
+           // > 'The Lion'
+       </code>
+   
+       <p>We can also rename any or all of the variables inside our import statement:</p>
+   
+       <code>
+           // src/Hogwarts.js<br>
+           import { colors as houseColors, gryffMascot as mascot } from "./houses/Gryffindor";<br><br>
+           console.log(houseColors);<br>
+           // > 'Scarlet and Gold'<br><br>
+           mascot();<br>
+           // > 'The Lion'
+       </code>
+   
+       <p>Importing Node Modules:</p>
+   
+       <code>
+           // src/Hogwarts.js<br>
+           import React from "react";<br>
+           import whoseHouse from "./houses/whoseHouse";<br>
+           import Hufflepuff from "./houses/Hufflepuff";<br>
+           import * as GryffFunctions from "./houses/Gryffindor";<br><br>
+           export default function Hogwarts() {<br>
+           &nbsp;&nbsp;return (<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;HooflePoof /&gt;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+           &nbsp;&nbsp;);<br>
+           }
+       </code>
+   
+       <p>Take a look at the first line of code in this file: <code>import React from 'react'</code>. Here, we are referencing the React library's default export. The React library is located inside the node_modules directory, a specific folder in many Node projects that holds packages of third-party code. Any time we are using code from an npm package, we must also import it in whatever file we're using it in.</p>
+   </section>
+   <h1>Conclusion</h1>
+   
+   <p><code>import</code> and <code>export</code> enable us to keep code modular and use it across different files. In addition to being able to import and export default functions, we can rename and alias imports. We can also reference npm packages that are in our project.</p>
+   
+   <h2>Resources:</h2>
+   <ul>
+       <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" target="_blank">MDN Import Documentation</a></li>
+       <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" target="_blank">MDN Export Documentation</a></li>
+   </ul> 
 </body>
 </html>
